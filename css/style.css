@@ -6,16 +6,18 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 footer{
     width: 100%;
     height: 10vh;
     background-color: #282828;
+    justify-content: space-between;
 }
 
 main section#aside-nav{
-    width: 13%;
+    width: 13vw;
     height: 90vh;
     background-color: black;
 }
@@ -48,7 +50,11 @@ main section#aside-nav  ul li{
     list-style: none;
 }
 
-main section#aside-nav  div#add{
+main section#aside-nav div#add-playlist{
+    padding-top: 7px;
+}
+
+main section#aside-nav  div#btn-add{
     color: black;
     background-color: #6b6b6b;
     width: 30px;
@@ -84,7 +90,7 @@ main section#aside-nav div#bottom-nav-bar img#user-logo{
 }
 
 main section#aside-nav span#user{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 main section#content{
@@ -125,6 +131,51 @@ main section#content div#top-nav ul li{
     font-size: .9rem;
 }
 
+footer section#info-songs, footer section#action-right {
+    width: 13vw;
+    height: 100%;
+    padding: 0 .6rem 0;
+    align-items: center;
+}
+
+footer section#info-songs img, .fa-heart{
+    margin-right: 14px;
+}
+
+footer section#info-songs img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+footer section#info-songs div#singer-track{
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+footer section#action-center{
+    width: 37vw;
+    height: 100%;
+    justify-content: center;
+}
+
+footer section#action-center div#ss{
+    height: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 200px 0;
+}
+
+footer section#action-center div#ss i{
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer section#action-center div#ss i#circle{
+    font-size: 2rem;
+}
+
 .flex{
     display: flex;
 }
@@ -145,4 +196,17 @@ main section#content div#top-nav ul li{
 
 .logo-gray{
     opacity: 50%;
+}
+
+.far{
+    color: #6b6b6b;
+}
+
+.singer{
+    font-size: .9rem;
+}
+
+.song{
+    font-size: .7rem;
+    color: #6b6b6b;
 }

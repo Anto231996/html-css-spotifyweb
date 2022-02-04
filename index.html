@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -27,8 +28,8 @@
     
                     <span class="white text-uppercase">Playlist</span>
                     
-                    <div class="flex">
-                        <div id="add" class="flex">
+                    <div id="add-playlist" class="flex">
+                        <div id="btn-add" class="flex">
                             <span>+</span>
                         </div>
                         <span id="playlist-create">Crea Playlist</span>
@@ -78,16 +79,30 @@
        </section>
     </main>
 
-    <footer>
-        <section>
-
+    <footer class="flex">
+        <section id="info-songs" class="flex">
+            <img src="img/sinister.jpeg" alt="sinister">
+            <div id="singer-track" class="flex">
+                <span class="singer white">Sinister</span>
+                <span class="song">Brano Nome</span>
+            </div>
+            <div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>     
         </section>  
 
-        <section>
-        
+        <section id="action-center" class="flex">
+            <div id="ss" class="flex">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i id="circle" class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
         </section>
 
-        <section>
+        <section id="action-right">
         
         </section>
     </footer>
