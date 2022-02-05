@@ -47,14 +47,16 @@
                 </div>
                  
                 <div id="bottom-nav-bar">
-                    <div>
-                        <img id="download-logo" class="logo-gray" src="img/download.svg" alt=""><span>Installa app</span>
+                    <div class="flex align-center">
+                        <img id="download-logo" class="logo-gray" src="img/download.svg" alt="">
+                        <span>Installa app</span>
                     </div>
 
                     <hr>
 
-                    <div>
-                        <img id="user-logo" src="img/profile.svg" alt="logo-user"><span id="user" class="white">John Doe</span>
+                    <div class="flex align-center">
+                        <img id="user-logo" src="img/profile.svg" alt="user logo">
+                        <h5 id="user">John Doe</h5>
                     </div>
                 </div>   
             </div>      
@@ -63,10 +65,12 @@
 
 
        <section id="content">
-           <div id="cta" class="flex">
-               <span class="text-uppercase white">Effettua l'upgrade</span>
-           </div>
-           <div id="top-nav" class="flex">
+            <div id="cta" class="flex">
+                <span class="text-uppercase white">Effettua l'upgrade</span>
+            </div>
+
+            <div id="wrap-main-content">
+                <div id="top-nav" class="flex">
                 <ul class="flex">
                     <li>in evidenzia</li>
                     <li>poadcast</li>
@@ -75,24 +79,84 @@
                     <li>nuove uscite</li>
                     <li>scopri</li>
                 </ul>
-            </div>
+                </div>
+                <h2>Recently played</h2>
+                <div id="recently-played" class="flex">
+                    <div class="item flex">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <h4>Heavy Metal</h4>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/stranger.jpeg" alt="">
+                        <h4>Stranger Thing,Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                        <h6>Kyle Dixon & Michael Stein</h6>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <h4>A quiet place</h4>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/split.jpeg" alt="">
+                        <h4>Split</h4>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/cure.jpeg" alt="">
+                        <h4>A cure for wellness</h4>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/sinister.jpeg" alt="">
+                        <h4>Sinister</h4>
+                        <h6>Subtitle</h6>
+                    </div>                  
+                </div>
+
+                <h2>Creato per John Doe</h2>
+                <h6>Piu' ascolti, piu' accurati saranno i suggerimenti.</h6>
+                <div id="creator-for" class="flex">
+                    <div class="item flex margin-right">
+                        <img src="img/radar.jpeg" alt="">
+                        <h4>Release Radar</h4>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <h4>Daily Mix 1</h4>
+                    </div>   
+                </div>
+
+                <h2>Artisti piu' popolari</h2>
+                <h6>Piu' ascolti, piu' accurati saranno i suggerimenti.</h6>
+                <div id="popular-artists" class="flex">
+                    <div class="item flex margin-right">
+                        <img src="img/youg.jpeg" alt="">
+                        <h4>Lana del Ray</h4>
+                    </div>
+                    <div class="item flex">
+                        <img src="img/einaudi.jpeg" alt="">
+                        <h4>Ludovico Einaudi</h4>
+                    </div>
+                </div>
+           </div>
        </section>
     </main>
 
     <footer class="flex">
-        <section id="info-songs" class="flex">
+        <div id="info-songs" class="flex">
             <img src="img/sinister.jpeg" alt="sinister">
             <div id="singer-track" class="flex">
-                <span class="singer white">Sinister</span>
+                <span class="white">Sinister</span>
                 <span class="song">Brano Nome</span>
             </div>
             <div>
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
             </div>     
-        </section>  
+        </div>  
 
-        <section id="action-center" class="flex">
+        <div id="action-center" class="flex">
             <div id="ss" class="flex">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
@@ -100,11 +164,27 @@
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
-        </section>
+            <div id="time-song" class="flex">
+                <span class="white">0:25</span>
+                <div id="bar-song" class="flex">
+                    <div class="line-song" id="line-gray"></div>
+                    <div class="line-song" id="line-darkgray"></div>
+                </div>
+                <span class="white">4:35</span>
+            </div>
+        </div>
 
-        <section id="action-right">
-        
-        </section>
+        <div id="action-right" class="flex">
+            <div id="volume" class="flex">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+                <div id="bar-volume" class="flex">
+                    <div class="line-song" id="line-gray"></div>
+                    <div class="line-song" id="line-darkgray"></div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
