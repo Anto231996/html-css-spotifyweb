@@ -34,12 +34,11 @@ main section#aside-nav{
 }
 
 main section#aside-nav div.container{
-    color: #6b6b6b;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     padding: 1rem 1rem 0 1rem;
-    line-height: 1.9rem;
+    line-height: 2.1rem;
     font-size: .8rem;
     overflow: auto;
 }
@@ -50,7 +49,6 @@ main section#aside-nav div#top-nav-bar img#logo-top{
 
 main section#aside-nav div#top-nav-bar div#navigation{
     margin: 1rem 0;
-    line-height: 33px;
 }
 
 main section#aside-nav div#top-nav-bar div#navigation > div{
@@ -78,8 +76,13 @@ main section#aside-nav div#top-nav-bar div#add-playlist{
     align-items: center;
 }
 
-main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add{
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add,
+main section#aside-nav div#bottom-nav-bar img#user-logo{
     background-color: #6b6b6b;
+}
+
+
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add{
     width: 35px;
     height: 35px;
     font-size: 40px;
@@ -116,13 +119,8 @@ main section#aside-nav div#top-nav-bar ul li{
 }
 
 main section#aside-nav div#top-nav-bar ul li a{
-    list-style: none;
     color: #6b6b6b;
     text-decoration: none;
-}
-
-main section#aside-nav div#bottom-nav-bar{
-    line-height: 2.5rem;
 }
 
 main section#aside-nav div#bottom-nav-bar a{
@@ -131,12 +129,9 @@ main section#aside-nav div#bottom-nav-bar a{
 }
 
 main section#aside-nav div#bottom-nav-bar img#user-logo{
-    background-color: #6b6b6b;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
 }
 
 main section#aside-nav div#bottom-nav-bar h5#user{
@@ -183,7 +178,6 @@ main section#content div#playlist-general{
 main section#content div#center-nav{
     width: 100%;
     justify-content: center;
-    align-items: flex-end;
     margin-bottom: 50px;
 }
 
@@ -231,7 +225,7 @@ main section#content div#playlist-general h2{
 }
 
 main section#content div#playlist-general h4{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-top: 15px;
 }
 
@@ -270,7 +264,7 @@ footer div#info-songs,
 footer div#action-right {
     width: 13vw;
     height: 100%;
-    padding: 0 .6rem 0;
+    margin: 0px 18px 0;
     align-items: center;
 }
 
@@ -301,7 +295,6 @@ footer div#info-songs div#singer-track a#song:hover{
 
 footer div#action-center{
     width: 37vw;
-    height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -312,6 +305,7 @@ footer div#action-center div#ss{
     align-items: center;
     width: 40%;
     justify-content: space-evenly;
+    margin-bottom: 5px;
 }
 
 footer div#action-center div#ss i{
