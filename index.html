@@ -18,38 +18,38 @@
             <div class="container flex">
                 <div id="top-nav-bar">
 
-                    <img src="img/logo.svg" alt="logo Spotify">
+                    <img id="logo-top" src="img/logo.svg" alt="logo Spotify">
                     
                     <div id="navigation">
-                        <div><img class="logo-gray" src="img/home.svg" alt="logo home"> Home</div>
-                        <div><img class="logo-gray" src="img/search.svg" alt="logo search"> Cerca</div>
-                        <div><img class="logo-gray" src="img/libreria.svg" alt="logo library"> La tua libreria</div>
+                        <div class="flex"><a href="#"><img class="logo-gray" src="img/home.svg" alt="logo home"><span>Home</span></a></div>
+                        <div class="flex"><a href="#"><img class="logo-gray" src="img/search.svg" alt="logo search"><span>Cerca</span></a></div>
+                        <div class="flex"><a href="#"><img class="logo-gray" src="img/libreria.svg" alt="logo library"><span>La tua libreria</span></a></div>
                     </div>
     
                     <span class="white text-uppercase">Playlist</span>
                     
                     <div id="add-playlist" class="flex">
                         <div id="btn-add" class="flex">
-                            <span>+</span>
+                            <a href="#">+</a>
                         </div>
-                        <span id="playlist-create">Crea Playlist</span>
+                        <a href="#" id="playlist-create">Crea Playlist</a>
                     </div>
                     
                     <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
                  
                 <div id="bottom-nav-bar">
                     <div class="flex align-center">
                         <img id="download-logo" class="logo-gray" src="img/download.svg" alt="">
-                        <span>Installa app</span>
+                        <a href="#">Installa app</a>
                     </div>
 
                     <hr>
@@ -66,21 +66,23 @@
 
        <section id="content">
             <div id="cta" class="flex">
-                <span class="text-uppercase white">Effettua l'upgrade</span>
+                <a href="#" id="btn-upgrade" class="text-uppercase white">Effettua l'upgrade</a>
             </div>
 
-            <div id="wrap-main-content">
-                <div id="top-nav" class="flex">
-                <ul class="flex">
-                    <li>in evidenzia</li>
-                    <li>poadcast</li>
-                    <li>classifiche</li>
-                    <li>generi e mood</li>
-                    <li>nuove uscite</li>
-                    <li>scopri</li>
-                </ul>
+            <div id="playlist-general">
+                <div id="center-nav" class="flex">
+                    <ul class="flex">
+                        <li><a href="#">in evidenzia</a></li>
+                        <li><a href="#">poadcast</a></li>
+                        <li><a href="#">classifiche</a></li>
+                        <li><a href="#">generi e mood</a></li>
+                        <li><a href="#">nuove uscite</a></li>
+                        <li><a href="#">scopri</a></li>
+                    </ul>
                 </div>
+
                 <h2>Recently played</h2>
+
                 <div id="recently-played" class="flex">
                     <div class="item flex">
                         <img src="img/metal_lifting.jpg" alt="">
@@ -116,6 +118,7 @@
 
                 <h2>Creato per John Doe</h2>
                 <h6>Piu' ascolti, piu' accurati saranno i suggerimenti.</h6>
+
                 <div id="creator-for" class="flex">
                     <div class="item flex margin-right">
                         <img src="img/radar.jpeg" alt="">
@@ -129,6 +132,7 @@
 
                 <h2>Artisti piu' popolari</h2>
                 <h6>Piu' ascolti, piu' accurati saranno i suggerimenti.</h6>
+
                 <div id="popular-artists" class="flex">
                     <div class="item flex margin-right">
                         <img src="img/youg.jpeg" alt="">
@@ -146,10 +150,12 @@
     <footer class="flex">
         <div id="info-songs" class="flex">
             <img src="img/sinister.jpeg" alt="sinister">
+
             <div id="singer-track" class="flex">
                 <span class="white">Sinister</span>
-                <span class="song">Brano Nome</span>
+                <a href="#" id="song">Brano Nome</a>
             </div>
+
             <div>
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
@@ -164,12 +170,18 @@
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
+
             <div id="time-song" class="flex">
                 <span class="white">0:25</span>
+
                 <div id="bar-song" class="flex">
-                    <div class="line-song" id="line-gray"></div>
-                    <div class="line-song" id="line-darkgray"></div>
+                    <div class="line-song line-gray flex">
+                        <div class="ball white"></div>
+                    </div> 
+
+                    <div class="line-song line-darkgray"></div>
                 </div>
+
                 <span class="white">4:35</span>
             </div>
         </div>
@@ -179,9 +191,10 @@
                 <i class="fas fa-list"></i>
                 <i class="fas fa-tv"></i>
                 <i class="fas fa-volume-up"></i>
+                
                 <div id="bar-volume" class="flex">
-                    <div class="line-song" id="line-gray"></div>
-                    <div class="line-song" id="line-darkgray"></div>
+                    <div class="line-song line-gray"></div>
+                    <div class="line-song line-darkgray"></div>
                 </div>
             </div>
         </div>

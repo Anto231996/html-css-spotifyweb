@@ -38,37 +38,47 @@ main section#aside-nav div.container{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding:1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     line-height: 1.9rem;
     font-size: .8rem;
     overflow: auto;
 }
 
-main section#aside-nav div#navigation{
+main section#aside-nav div#top-nav-bar img#logo-top{
+    width: 150px;
+}
+
+main section#aside-nav div#top-nav-bar div#navigation{
     margin: 1rem 0;
+    line-height: 33px;
+}
+
+main section#aside-nav div#top-nav-bar div#navigation > div{
+    padding-left: 5px;
+}
+
+main section#aside-nav div#top-nav-bar div#navigation > div:hover{
+    border-left: 2px solid greenyellow;
+}
+
+main section#aside-nav div#top-nav-bar div#navigation div a{
+    text-decoration: none;
+    color: #6b6b6b;
 }
 
 main section#aside-nav div#top-nav-bar div#navigation img,
 main section#aside-nav div#bottom-nav-bar img{
     width: 25px;
     vertical-align: middle;
+    margin-right: 7px;
 }
 
-main section#aside-nav ul{
-    padding-top: .8rem;
-}
-
-main section#aside-nav  ul li{
-    list-style: none;
-}
-
-main section#aside-nav div#add-playlist{
+main section#aside-nav div#top-nav-bar div#add-playlist{
     padding-top: 7px;
     align-items: center;
 }
 
-main section#aside-nav  div#btn-add{
-    color: black;
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add{
     background-color: #6b6b6b;
     width: 35px;
     height: 35px;
@@ -79,19 +89,45 @@ main section#aside-nav  div#btn-add{
     font-weight: normal;
 }
 
-main section#aside-nav span#playlist-create{
-    font-size: .9rem;
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add a,
+main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create{
+    text-decoration: none;
 }
 
-main section#aside-nav img{
-    width: 150px;
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add a{
+    color: black;
+}
+
+main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add:hover{
+    background-color: white;
+}
+
+main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create{
+    font-size: .9rem;
+    color: #5a5a5a;
+}
+
+main section#aside-nav div#top-nav-bar ul{
+    padding-top: .8rem;
+}
+
+main section#aside-nav div#top-nav-bar ul li{
+    list-style: none;
+}
+
+main section#aside-nav div#top-nav-bar ul li a{
+    list-style: none;
+    color: #6b6b6b;
+    text-decoration: none;
 }
 
 main section#aside-nav div#bottom-nav-bar{
     line-height: 2.5rem;
 }
-main section#aside-nav div#bottom-nav-bar img#download-logo{
-    margin-right: 5px;
+
+main section#aside-nav div#bottom-nav-bar a{
+    text-decoration: none;
+    color: #5a5a5a;
 }
 
 main section#aside-nav div#bottom-nav-bar img#user-logo{
@@ -103,7 +139,7 @@ main section#aside-nav div#bottom-nav-bar img#user-logo{
     margin-right: 10px;
 }
 
-main section#aside-nav h5#user{
+main section#aside-nav div#bottom-nav-bar h5#user{
     font-size: .9rem;
 }
 
@@ -114,7 +150,7 @@ main section#content{
     overflow: auto;
 }
 
-main section#content div#cta.flex{
+main section#content div#cta{
     width: 87vw;
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -122,77 +158,49 @@ main section#content div#cta.flex{
     align-items: center;
     padding-right: .5rem;
     position: fixed;
+    z-index: 2;
 }
 
-main section#content div#cta span{
+main section#content div#cta a#btn-upgrade{
     border: .1rem solid white;
     padding: .7rem 3.5rem;
     border-radius: 25px;
     margin-right: 1rem;
     font-size: .9rem;
+    text-decoration: none;
 }
 
-main section#content div#top-nav{
+main section#content div#cta a#btn-upgrade:hover{
+    transform: scale(1.1);
+}
+
+main section#content div#playlist-general{
+    width: 97%;
+    margin: auto;
+    padding-top: 120px;
+}
+
+main section#content div#center-nav{
     width: 100%;
-    padding-top: 1.2rem;
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 50px;
 }
 
-main section#content div#top-nav ul li{
+main section#content div#center-nav ul li{
     list-style: none;
+}
+
+main section#content div#center-nav ul li a{
     margin: 0 .7rem;
     color: #6b6b6b;
     text-transform: uppercase;
     font-size: .9rem;
+    text-decoration: none;
 }
 
-main section#content div#wrap-main-content{
-    width: 97%;
-    margin: auto;
-    padding-top: 100px;
-}
-
-main section#content div#wrap-main-content img{
-    margin-bottom: 18px;
-}
-
-main section#content div#wrap-main-content h2,
-main section#content div#wrap-main-content h4{
-    margin-bottom: 15px;
-}
-
-main section#content div#wrap-main-content h6{
-    margin-bottom: 40px;
-}
-
-main section#content div#wrap-main-content h2{
-    font-size: 2rem;
-}
-
-main section#content div#wrap-main-content h4{
-    font-size: 1.2rem;
-}
-
-main section#content div#wrap-main-content h6{
-    font-size: .9rem;
-}
-
-main section#content div#recently-played,
-main section#content div#creator-for,
-main section#content div#popular-artists{
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-}
-
-main section#content div#recently-played{
-    justify-content: space-between;
-    padding-top: 25px;
-}
-
-main section#content div#popular-artists img{
-    border-radius: 50%;
+main section#content div#center-nav ul li a:hover{
+    border-bottom: 3px solid greenyellow;
 }
 
 main section#content div.item{
@@ -201,18 +209,72 @@ main section#content div.item{
     text-align: center;
 }
 
-main section#content div#creator-for div.margin-right{
-    margin-right: 21px;
+main section#content div#playlist-general img{
+    width: 100%;
 }
 
-footer div#info-songs, footer div#action-right {
+main section#content div#playlist-general img:hover{
+    filter: brightness(0.3);
+}
+
+main section#content div#playlist-general h2,
+main section#content div#playlist-general h4{
+    margin-bottom: 15px;
+}
+
+main section#content div#playlist-general h6{
+    margin-bottom: 40px;
+}
+
+main section#content div#playlist-general h2{
+    font-size: 2rem;
+}
+
+main section#content div#playlist-general h4{
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+main section#content div#playlist-general h6{
+    font-size: .9rem;
+}
+
+main section#content div#playlist-general div#recently-played,
+main section#content div#playlist-general div#creator-for,
+main section#content div#playlist-general div#popular-artists{
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+main section#content div#playlist-general div#recently-played{
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+main section#content div#playlist-general div#popular-artists img{
+    border-radius: 50%;
+}
+
+main section#aside-nav div#top-nav-bar div#navigation > div a:hover,
+main section#aside-nav div#top-nav-bar ul li a:hover, 
+main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create:hover,
+main section#aside-nav div#bottom-nav-bar a:hover,
+main section#content div#playlist-general div#center-nav ul li a:hover, 
+footer div#info-songs div#singer-track a#song:hover, 
+.fa-heart:hover, .fa-folder:hover
+{
+    color: white;
+}
+
+footer div#info-songs, 
+footer div#action-right {
     width: 13vw;
     height: 100%;
     padding: 0 .6rem 0;
     align-items: center;
 }
 
-footer div#info-songs img, .fa-heart{
+footer div#info-songs img{
     margin-right: 14px;
 }
 
@@ -225,6 +287,16 @@ footer div#info-songs img{
 footer div#info-songs div#singer-track{
     flex-direction: column;
     margin-right: 40px;
+}
+
+footer div#info-songs div#singer-track a#song{
+    text-decoration: none;
+    font-size: .7rem;
+    color: #6b6b6b;
+}
+
+footer div#info-songs div#singer-track a#song:hover{
+    text-decoration: underline;
 }
 
 footer div#action-center{
@@ -255,18 +327,22 @@ footer div#action-center div#ss i#circle{
     font-size: 2rem;
 }
 
+footer div#action-center div#ss i.fa-play-circle:hover{
+    transform: scale(1.2);
+}
+
 footer div#action-center div#time-song{
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-footer div#action-center div#time-song > span{
-    font-size: .8rem;
+footer div#action-center div#time-song div#bar-song{
+    width: 80%;
 }
 
-footer div#action-right div#bar-volume{
-    width: 50%;
+footer div#action-center div#time-song > span{
+    font-size: .8rem;
 }
 
 footer div#action-right div#volume{
@@ -275,18 +351,24 @@ footer div#action-right div#volume{
     align-items: center;  
 }
 
-#bar-song{
-    width: 80%;
+footer div#action-right div#volume div#bar-volume{
+    width: 50%;
 }
 
-#line-gray{
+footer div.line-gray:hover{
+    background-color: greenyellow;
+}
+
+.line-gray{
     height: 5px;
     width: 20%;
     background-color: #c1c1c1;
     border-radius: 5px;
+    justify-content: end;
+    align-items: center;
 }
 
-#line-darkgray{
+.line-darkgray{
     height: 5px;
     width: 80%;
     background-color: #5a5a5a;
@@ -327,11 +409,24 @@ footer div#action-right div#volume{
     font-size: .9rem;
 }
 
-.song{
-    font-size: .7rem;
-    color: #6b6b6b;
-}
-
 .margin-right{
     margin-right: 21px;
 }
+
+.fa-heart{
+    margin-right: 15px;
+}
+
+
+/* .ball{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+} */
+
+/* .ball:hover{
+    display: inline-block;
+}
+ */
