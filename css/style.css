@@ -54,6 +54,10 @@ main section#aside-nav div#top-nav-bar img#logo-top{
     width: 150px;
 }
 
+main section#aside-nav div#top-nav-bar img#logo-top-small{
+    display: none;
+}
+
 main section#aside-nav div#top-nav-bar div#navigation{
     margin: 1rem 0;
 }
@@ -150,7 +154,7 @@ main section#aside-nav div#bottom-nav-bar h5#user{
 }
 
 main section#content{
-    width: 87vw;
+    width: 100%;
     background-color: #141922;
     overflow: auto;
 }
@@ -231,7 +235,7 @@ main section#content div#playlist-general h6{
 }
 
 main section#content div#playlist-general h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 main section#content div#playlist-general h4{
@@ -371,7 +375,7 @@ footer div.line-gray:hover{
 
 .line-gray{
     height: 5px;
-    width: 20%;
+    width: 33%;
     background-color: #c1c1c1;
     border-radius: 5px;
     justify-content: end;
@@ -472,4 +476,124 @@ footer div.line-gray:hover{
     main section#content div#playlist-general div#recently-played{
         justify-content: space-between;
     }
+}
+
+
+@media screen and (max-width: 575px){
+    
+
+    main section#aside-nav{
+        width: 60px;
+        height: 100%;
+        background-color: black;
+        flex-shrink: 0;
+    }
+
+    main section#content div#center-nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 40px;
+    }
+
+    main section#content div#center-nav ul li a{
+        font-size: .8rem;
+    }
+
+    main section#content div.item{
+        width: calc(50% - 10px);
+        margin: 0px 5px;
+    }
+
+    main section#aside-nav span{
+        display: none;
+    }
+    
+    main section#aside-nav div#top-nav-bar{
+        height: calc(100% - 80px);
+    }
+    
+    main section#aside-nav div#top-nav-bar img#logo-top{
+        display: none;
+    }
+
+    main section#aside-nav div#top-nav-bar img#logo-top-small{
+        display: inline-block;
+    }
+    
+    main section#aside-nav div#top-nav-bar img#logo-top-small{
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-duration: 1.3s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotate{
+        to{
+        transform: rotate(360deg);
+        }
+    }
+
+    main section#aside-nav div#top-nav-bar div#navigation > div{
+        padding-left: 0px;
+    }
+         
+    main section#aside-nav div#top-nav-bar div#add-playlist{
+        display: none;
+    }
+        
+    main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add{
+        display: none;
+    }
+              
+    main section#aside-nav div#top-nav-bar ul{
+        display: none;
+    }
+        
+    main section#aside-nav div#bottom-nav-bar hr{
+        display: none;
+    }
+    
+    main section#aside-nav div#bottom-nav-bar a{
+        display: none;
+    }
+    
+    main section#aside-nav div#bottom-nav-bar img#user-logo{
+        width: 20px;
+        height: 20px;
+    }
+    
+    main section#aside-nav div#bottom-nav-bar h5#user{
+        display: none;
+    }
+
+    footer div#info-songs img{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+    }
+
+    main section#content div#cta{
+        width: calc(100% - 60px);
+        justify-content: end;
+        align-items: center;
+        padding-right: .5rem;
+    }
+
+    main section#content div#cta a#btn-upgrade{
+        margin-right: 1.8rem;
+        font-size: .7rem;
+    }
+
+    main section#aside-nav div#bottom-nav-bar img{
+        margin-bottom: 10px;
+    }
+
+    main section#aside-nav div#bottom-nav-bar img#user-logo{
+        margin: 2px;
+    }
+
+    main section#aside-nav div#bottom-nav-bar img#user-logo:hover,
+    main section#aside-nav div#bottom-nav-bar img:hover{
+        transform: scale(1.2);
+    }  
 }
