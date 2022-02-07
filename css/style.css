@@ -11,6 +11,7 @@ body{
 
 main{
     height:calc(100vh - 100px);
+    width: 100%;
 }
 
 footer{
@@ -420,16 +421,97 @@ footer div.line-gray:hover{
     margin-right: 15px;
 }
 
-
-/* .ball{
+.ball{
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: white;
-    display: none;
-} */
+    opacity: 0;
+} 
 
-/* .ball:hover{
+.ball:hover{
     display: inline-block;
+    opacity: 100;
 }
- */
+
+
+
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    
+    main section#aside-nav{
+        width: 225px;
+    }
+
+    main section#content div#cta{
+        width: calc(100vw - 225px);
+        height: 75px;
+        padding-right: 0;
+    }
+
+    main section#content div#cta a#btn-upgrade{
+        margin-right: 2rem;
+        font-size: .8rem;   
+    }
+
+    main section#content div#center-nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 40px;
+    }
+
+    main section#content div#center-nav ul li a{
+        font-size: .8rem;
+    }
+    main section#content div.item{
+        width: calc(150px - 10px);
+        margin: 0px 5px 0;
+    }
+    main section#content div#playlist-general{
+        padding-top: 90px;
+    }
+
+    main section#content div#playlist-general h2{
+        font-size: 1.2rem;
+    }
+
+    main section#content div#playlist-general h4{
+        font-size: .8rem;
+        padding-top: 7px;
+    }
+
+    main section#content div#playlist-general h6{
+        font-size: .6rem;
+    }
+    
+    main section#content div#playlist-general h2,
+    main section#content div#playlist-general h4{
+        margin-bottom: 7px;
+    }
+
+    main section#content div#playlist-general div#recently-played{
+        justify-content: flex-start;
+    }
+
+    footer div#info-songs, 
+    footer div#action-right {
+        width: 25vw;
+        margin: 0%;
+    }
+
+    footer div#info-songs{
+        margin-left: 10px;
+    }
+
+    footer div#action-right{
+        margin-right: 10px;
+    }
+
+    footer div#action-center div#ss{
+        width: 70%;
+    }
+
+    .fa-heart{
+        margin: 0;
+    }
+}
