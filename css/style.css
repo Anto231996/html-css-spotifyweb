@@ -17,7 +17,8 @@ main{
 footer{
     width: 100%;
     height: 100px;
-    background-color: #282828;
+    background-color: #1a1a1a;
+    border-top: #3b3b3b 1px solid;
     justify-content: space-between;
     position: relative;
 }
@@ -27,7 +28,7 @@ h2, h4, h5{
 }
 
 h6{
-    color: #6e7175;
+    color: #b3b3b3;
 }
 
 main section#aside-nav{
@@ -67,12 +68,12 @@ main section#aside-nav div#top-nav-bar div#navigation > div{
 }
 
 main section#aside-nav div#top-nav-bar div#navigation > div:hover{
-    border-left: 2px solid greenyellow;
+    border-left: 2px solid #1DB954;
 }
 
 main section#aside-nav div#top-nav-bar div#navigation div a{
     text-decoration: none;
-    color: #6b6b6b;
+    color: #b3b3b3;
 }
 
 main section#aside-nav div#top-nav-bar div#navigation img,
@@ -91,7 +92,6 @@ main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add,
 main section#aside-nav div#bottom-nav-bar img#user-logo{
     background-color: #6b6b6b;
 }
-
 
 main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add{
     width: 35px;
@@ -118,7 +118,7 @@ main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add:hover{
 
 main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create{
     font-size: .9rem;
-    color: #5a5a5a;
+    color: #b3b3b3
 }
 
 main section#aside-nav div#top-nav-bar ul{
@@ -130,7 +130,7 @@ main section#aside-nav div#top-nav-bar ul li{
 }
 
 main section#aside-nav div#top-nav-bar ul li a{
-    color: #6b6b6b;
+    color: #b3b3b3;
     text-decoration: none;
 }
 
@@ -155,14 +155,14 @@ main section#aside-nav div#bottom-nav-bar h5#user{
 
 main section#content{
     width: 100%;
-    background-color: #141922;
+    background-color: #121212;
     overflow: auto;
 }
 
 main section#content div#cta{
     width: calc(100% - 250px);
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     justify-content: end;
     align-items: center;
     padding-right: .5rem;
@@ -201,14 +201,14 @@ main section#content div#center-nav ul li{
 
 main section#content div#center-nav ul li a{
     margin: 0 .7rem;
-    color: #6b6b6b;
+    color: #b3b3b3;
     text-transform: uppercase;
     font-size: .9rem;
     text-decoration: none;
 }
 
 main section#content div#center-nav ul li a:hover{
-    border-bottom: 3px solid greenyellow;
+    border-bottom: 3px solid #1DB954;
 }
 
 main section#content div.item{
@@ -217,15 +217,19 @@ main section#content div.item{
     text-align: center;
 }
 
-main section#content div.item div.img-play{
+main section#content div.item img{
+    border-radius: 10%;
+}
+
+/* main section#content div.item div.img-play{
     position: relative;
-}
+} */
 
-main section#content div#playlist-general div.img-play img{
+/* main section#content div#playlist-general div.img-play img{
     width: 100%;
-}
+} */
 
-/* main section#content div.item div.img-play i#circle{
+/* main section#content div.item div.img-play i#play{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -279,14 +283,16 @@ main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create:hover,
 main section#aside-nav div#bottom-nav-bar a:hover,
 main section#content div#playlist-general div#center-nav ul li a:hover, 
 footer div#info-songs div#singer-track a#song:hover, 
-.fa-heart:hover, .fa-folder:hover
+.fa-folder:hover, 
+footer div#action-center div#ss i:hover, 
+footer div#action-right div#volume i:hover
 {
     color: white;
 }
 
 footer div#info-songs, 
 footer div#action-right {
-    width: 150px;
+    width: 210px;
     height: 100%;
     align-items: center;
 }
@@ -308,6 +314,11 @@ footer div#info-songs img{
 footer div#info-songs div#singer-track{
     flex-direction: column;
     margin-right: 20px;
+    font-weight: normal;
+}
+
+footer div#info-songs div#singer-track span{
+    font-size: .8rem;
 }
 
 footer div#info-songs div#singer-track a#song{
@@ -318,6 +329,10 @@ footer div#info-songs div#singer-track a#song{
 
 footer div#info-songs div#singer-track a#song:hover{
     text-decoration: underline;
+}
+
+footer div#info-songs div i.fa-heart:active{
+    color: #6b6b6b;
 }
 
 footer div#action-center{
@@ -340,12 +355,13 @@ footer div#action-center div#ss i{
 
 footer div#action-center div#ss i,
 footer div#action-right div#volume i{
-    color: white;
+    color: #c1c1c1;
     font-size: 13px;
 }
 
 footer div#action-center div#ss i#circle{
     font-size: 2rem;
+    color: white;
 }
 
 footer div#action-center div#ss i.fa-play-circle:hover{
@@ -364,6 +380,7 @@ footer div#action-center div#time-song div#bar-song{
 
 footer div#action-center div#time-song > span{
     font-size: .6rem;
+    color: #c1c1c1;
 }
 
 footer div#action-right{
@@ -381,12 +398,12 @@ footer div#action-right div#volume div#bar-volume{
 }
 
 footer div.line-gray:hover{
-    background-color: greenyellow;
+    background-color: #1DB954;
 }
 
 .line-gray{
     height: 5px;
-    width: 33%;
+    width: 15%;
     background-color: #c1c1c1;
     border-radius: 5px;
     position: relative;
@@ -429,6 +446,10 @@ footer div.line-gray:hover{
     color: #6b6b6b;
 }
 
+.fa-heart{
+    color: #1DB954;
+}
+
 .singer{
     font-size: .9rem;
 }
@@ -444,7 +465,7 @@ footer div.line-gray:hover{
     background-color: white;
     position: absolute;
     top: -90%;
-    left: 90%;
+    left: 80%;
     opacity: 0;
 } 
 
