@@ -111,6 +111,7 @@ main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add a{
 
 main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add:hover{
     background-color: white;
+    transition: .3s ease-in-out;
 }
 
 main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create{
@@ -137,7 +138,7 @@ main section#aside-nav div#bottom-nav-bar{
 
 main section#aside-nav div#bottom-nav-bar a{
     text-decoration: none;
-    color: #5a5a5a;
+    color: #b3b3b3;
 }
 
 main section#aside-nav div#bottom-nav-bar img#user-logo{
@@ -158,8 +159,8 @@ main section#content{
 
 main section#content div#cta{
     width: calc(100% - 241px);
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.4);
+    height: 64px;
+    background-color: rgb(32, 16, 100);
     justify-content: end;
     align-items: center;
     padding-right: .5rem;
@@ -168,22 +169,23 @@ main section#content div#cta{
 }
 
 main section#content div#cta a#btn-upgrade{
-    border: .1rem solid white;
-    padding: .7rem 3.5rem;
+    padding: .7rem 3rem;
     border-radius: 25px;
     margin-right: 1rem;
-    font-size: .9rem;
+    font-size: .8rem;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 main section#content div#cta a#btn-upgrade:hover{
     transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 
 main section#content div#playlist-general{
     width: 95%;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 main section#content div#center-nav{
@@ -206,6 +208,7 @@ main section#content div#center-nav ul li a{
 
 main section#content div#center-nav ul li a:hover{
     border-bottom: 3px solid #1DB954;
+    transition: .1s ease-in-out;
 }
 
 main section#content div.item{
@@ -235,6 +238,7 @@ main section#content div.item img{
 
 main section#content div#playlist-general img:hover{
     filter: brightness(0.3);
+    transition: .2s ease-in-out;
 }
 
 main section#content div#playlist-general h2,
@@ -286,6 +290,7 @@ footer div#action-center div#ss i:hover,
 footer div#action-right div#volume i:hover
 {
     color: white;
+    transition: .1s ease-in-out;
 }
 
 footer div#info-songs, 
@@ -563,11 +568,6 @@ footer div.line-gray:hover{
     main section#aside-nav div#bottom-nav-bar img#user-logo{
         margin: 2px;
     }
-
-    main section#aside-nav div#bottom-nav-bar img#user-logo:hover,
-    main section#aside-nav div#bottom-nav-bar img:hover{
-        transform: scale(1.2);
-    } 
     
     main section#aside-nav div#bottom-nav-bar img#user-logo{
         width: 20px;
