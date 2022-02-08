@@ -10,13 +10,13 @@ body{
 }
 
 main{
-    height:calc(100vh - 100px);
+    height:calc(100vh - 91px);
     width: 100%;
 }
 
 footer{
     width: 100%;
-    height: 100px;
+    height: 91px;
     background-color: #1a1a1a;
     border-top: #3b3b3b 1px solid;
     justify-content: space-between;
@@ -32,7 +32,7 @@ h6{
 }
 
 main section#aside-nav{
-    width: 250px;
+    width: 241px;
     height: 100%;
     background-color: black;
     flex-shrink: 0;
@@ -41,7 +41,7 @@ main section#aside-nav{
 main section#aside-nav div.container{
     flex-direction: column;
     height: 100%;
-    padding: 1rem 1rem 0 1rem;
+    padding: 24px 16px 0 16px;
     line-height: 2.1rem;
     font-size: .8rem;
 }
@@ -52,7 +52,7 @@ main section#aside-nav div#top-nav-bar{
 }
 
 main section#aside-nav div#top-nav-bar img#logo-top{
-    width: 150px;
+    width: 130px;
 }
 
 main section#aside-nav div#top-nav-bar img#logo-top-small{
@@ -61,10 +61,7 @@ main section#aside-nav div#top-nav-bar img#logo-top-small{
 
 main section#aside-nav div#top-nav-bar div#navigation{
     margin: 1rem 0;
-}
-
-main section#aside-nav div#top-nav-bar div#navigation > div{
-    padding-left: 5px;
+    line-height: 40px;
 }
 
 main section#aside-nav div#top-nav-bar div#navigation > div:hover{
@@ -117,7 +114,6 @@ main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add:hover{
 }
 
 main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create{
-    font-size: .9rem;
     color: #b3b3b3
 }
 
@@ -132,6 +128,7 @@ main section#aside-nav div#top-nav-bar ul li{
 main section#aside-nav div#top-nav-bar ul li a{
     color: #b3b3b3;
     text-decoration: none;
+    font-weight: normal;
 }
 
 main section#aside-nav div#bottom-nav-bar{
@@ -160,7 +157,7 @@ main section#content{
 }
 
 main section#content div#cta{
-    width: calc(100% - 250px);
+    width: calc(100% - 241px);
     height: 90px;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: end;
@@ -218,7 +215,7 @@ main section#content div.item{
 }
 
 main section#content div.item img{
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 /* main section#content div.item div.img-play{
@@ -250,7 +247,7 @@ main section#content div#playlist-general h6{
 }
 
 main section#content div#playlist-general h2{
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 main section#content div#playlist-general h4{
@@ -258,7 +255,8 @@ main section#content div#playlist-general h4{
 }
 
 main section#content div#playlist-general h6{
-    font-size: .8rem;
+    font-size: 14px;
+    font-weight:normal ;
 }
 
 main section#content div#playlist-general div#recently-played,
