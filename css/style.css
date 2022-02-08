@@ -217,9 +217,30 @@ main section#content div.item{
     text-align: center;
 }
 
-main section#content div#playlist-general img{
+main section#content div.item div.img-play{
+    position: relative;
+}
+
+main section#content div#playlist-general div.img-play img{
     width: 100%;
 }
+
+main section#content div.item div.img-play i#circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+main section#content div.item div.img-play i#circle:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
 
 main section#content div#playlist-general img:hover{
     filter: brightness(0.3);
@@ -378,13 +399,12 @@ footer div.line-gray:hover{
     width: 33%;
     background-color: #c1c1c1;
     border-radius: 5px;
-    justify-content: end;
-    align-items: center;
+    position: relative;
 }
 
 .line-darkgray{
     height: 5px;
-    width: 80%;
+    width: 100%;
     background-color: #5a5a5a;
     border-radius: 5px;
 }
@@ -432,11 +452,13 @@ footer div.line-gray:hover{
     width: 15px;
     border-radius: 50%;
     background-color: white;
+    position: absolute;
+    top: -90%;
+    left: 90%;
     opacity: 0;
 } 
 
 .ball:hover{
-    display: inline-block;
     opacity: 100;
 }
 
