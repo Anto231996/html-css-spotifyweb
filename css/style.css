@@ -225,22 +225,12 @@ main section#content div#playlist-general div.img-play img{
     width: 100%;
 }
 
-main section#content div.item div.img-play i#circle{
+/* main section#content div.item div.img-play i#circle{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
-}
-
-main section#content div.item div.img-play i#circle:hover{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
-}
-
+} */
 
 main section#content div#playlist-general img:hover{
     filter: brightness(0.3);
