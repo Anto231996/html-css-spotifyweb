@@ -41,7 +41,7 @@ main section#aside-nav{
 main section#aside-nav div.container{
     flex-direction: column;
     height: 100%;
-    padding: 24px 16px 0 16px;
+    padding: 24px 16px 8px;
     line-height: 2.1rem;
     font-size: .8rem;
 }
@@ -160,7 +160,7 @@ main section#content{
 main section#content div#cta{
     width: calc(100% - 241px);
     height: 64px;
-    background-color: rgb(32, 16, 100);
+    background-color: rgba(32, 16, 100, 0.9);
     justify-content: end;
     align-items: center;
     padding-right: .5rem;
@@ -169,7 +169,7 @@ main section#content div#cta{
 }
 
 main section#content div#cta a#btn-upgrade{
-    padding: .7rem 3rem;
+    padding: .7rem 2rem;
     border-radius: 25px;
     margin-right: 1rem;
     font-size: .8rem;
@@ -218,7 +218,7 @@ main section#content div.item{
 }
 
 main section#content div.item img{
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 /* main section#content div.item div.img-play{
@@ -311,7 +311,6 @@ footer div#info-songs img{
 footer div#info-songs img{
     width: 50px;
     height: 50px;
-    object-fit: cover;
 }
 
 footer div#info-songs div#singer-track{
