@@ -114,9 +114,9 @@ main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add a{
     color: black;
 }
 
-main section#aside-nav div#top-nav-bar div#add-playlist div#btn-add:hover{
+main section#aside-nav div#top-nav-bar div#add-playlist:hover div#btn-add{
     background-color: white;
-    transition: .3s ease-in-out;
+    transition: .1s ease-in-out;
 }
 
 main section#aside-nav div#top-nav-bar ul{
@@ -167,7 +167,7 @@ main section#content div#banner{
     align-items: center;
     padding-right: .5rem;
     position: fixed;
-    z-index: 2;
+    z-index: 6;
 }
 
 main section#content div#banner a#btn-upgrade{
@@ -218,13 +218,31 @@ main section#content div.item{
     text-align: center;
 }
 
-main section#content div.item img{
-    border-radius: 3%;
+main section#content div#playlist-general div.item div.img-play{
+    position: relative;
 }
 
-main section#content div#playlist-general img:hover{
-    filter: brightness(0.3);
-    transition: .2s ease-in-out;
+main section#content div.item img{
+    border-radius: 3%;
+    width: 100%;
+}
+
+main section#content div#playlist-general div.item div.img-play:hover img{
+    filter: brightness(0.5);
+}
+
+main section#content div#playlist-general div.item div.img-play i.fa-play-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    filter: opacity(0);
+}
+
+main section#content div#playlist-general div.item div.img-play:hover i.fa-play-circle{
+    filter: opacity(1);
 }
 
 main section#content div#playlist-general h2,
@@ -267,7 +285,7 @@ main section#content div#playlist-general div#popular-artists img{
 
 main section#aside-nav div#top-nav-bar div#navigation > div a:hover,
 main section#aside-nav div#top-nav-bar ul li a:hover, 
-main section#aside-nav div#top-nav-bar div#add-playlist a#playlist-create:hover,
+main section#aside-nav div#top-nav-bar div#add-playlist:hover a#playlist-create,
 main section#aside-nav div#bottom-nav-bar a:hover,
 main section#content div#playlist-general div#center-nav ul li a:hover, 
 footer div#info-songs div#singer-track a#song:hover, 
@@ -368,6 +386,15 @@ footer div#action-center div#time-song div#bar-song{
     width: 65%;
 }
 
+footer div#action-center div#time-song div#bar-song:hover .ball, footer div#action-right div#volume div#bar-volume:hover .ball{
+    filter: opacity(1);
+}
+
+footer div#action-center div#time-song div#bar-song:hover .line-gray, 
+footer div#action-right div#volume div#bar-volume:hover .line-gray{
+    background-color: #1DB954;
+}
+
 footer div#action-center div#time-song > span{
     font-size: .6rem;
 }
@@ -386,9 +413,9 @@ footer div#action-right div#volume div#bar-volume{
     width: 50%;
 }
 
-footer div.line-gray:hover{
+/* footer div.line-gray:hover{
     background-color: #1DB954;
-}
+} */
 
 .line-gray{
     height: 5px;
@@ -455,12 +482,12 @@ footer div.line-gray:hover{
     position: absolute;
     top: -90%;
     left: 80%;
-    opacity: 0;
+    filter: opacity(0);
 } 
 
-.ball:hover{
-    opacity: 100;
-}
+/* .ball:hover{
+    filter: opacity(1);
+} */
 
 /* MEDIA QUERY MD */
 @media screen and (max-width: 992px) and (min-width: 768px) {
