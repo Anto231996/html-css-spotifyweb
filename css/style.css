@@ -160,7 +160,7 @@ main section#content{
     overflow: auto;
 }
 
-main section#content div#cta{
+main section#content div#banner{
     width: calc(100% - 241px);
     height: 64px;
     background-color: rgba(15, 5, 50, 0.9);
@@ -171,7 +171,7 @@ main section#content div#cta{
     z-index: 2;
 }
 
-main section#content div#cta a#btn-upgrade{
+main section#content div#banner a#btn-upgrade{
     padding: .7rem 2rem;
     border-radius: 25px;
     margin-right: 1rem;
@@ -180,7 +180,7 @@ main section#content div#cta a#btn-upgrade{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-main section#content div#cta a#btn-upgrade:hover{
+main section#content div#banner a#btn-upgrade:hover{
     transform: scale(1.1);
     transition: .3s ease-in-out;
 }
@@ -223,21 +223,6 @@ main section#content div.item{
 main section#content div.item img{
     border-radius: 3%;
 }
-
-/* main section#content div.item div.img-play{
-    position: relative;
-} */
-
-/* main section#content div#playlist-general div.img-play img{
-    width: 100%;
-} */
-
-/* main section#content div.item div.img-play i#play{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 main section#content div#playlist-general img:hover{
     filter: brightness(0.3);
@@ -519,7 +504,6 @@ footer div.line-gray:hover{
 
 @media screen and (max-width: 575px){
     
-
     main section#aside-nav{
         width: 60px;
         height: 100%;
@@ -591,14 +575,14 @@ footer div.line-gray:hover{
         margin: 0px 5px;
     }
     
-    main section#content div#cta{
+    main section#content div#banner{
         width: calc(100% - 60px);
         justify-content: end;
         align-items: center;
         padding-right: .5rem;
     }
 
-    main section#content div#cta a#btn-upgrade{
+    main section#content div#banner a#btn-upgrade{
         margin-right: 1.8rem;
         font-size: .7rem;
     }
